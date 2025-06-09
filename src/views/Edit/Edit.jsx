@@ -22,7 +22,7 @@ function Edituser() {
     const { id } = useParams();
 
     const loadInternDetail = async () => {
-                const response = await axios.get(`http://localhost:5000/interns/${id}`);
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/interns/${id}`);
                 setInterns(response.data.data);
     };
 
@@ -39,7 +39,7 @@ function Edituser() {
     }
 
     try {
-        const response = await axios.put(`http://localhost:5000/interns/${id}`, {
+        const response = await axios.put(`${import.meta.env.VITE_API_URL}/interns/${id}`, {
             name: name,
             age: age,
             qualification: qualification,

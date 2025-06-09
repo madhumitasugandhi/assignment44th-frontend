@@ -10,7 +10,7 @@ function About() {
 
   const loadInterDetail = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/interns/${id}`);
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/interns/${id}`);
       setIntern(response.data.data);
     } catch (error) {
       console.error("Failed to fetch intern data", error);

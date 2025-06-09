@@ -13,7 +13,7 @@ function App() {
 
   const loadInterns = async () => {
     console.log('Loading Interns Data....!');
-    const response = await axios.get('http://localhost:5000/interns');
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}/interns`);
     setInterns(response.data.data);
     console.log(response.data.data);
   };
