@@ -1,0 +1,18 @@
+.app-footer {
+  background: linear-gradient(to bottom, #0072C6, #005999);
+  color: #fff;
+  text-align: center;
+  padding: 10px 18px 10px 0px;
+  width: 100%;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: -10px;
+  margin-bottom: -5px;
+  position: fixed;
+  bottom:5px
+}
+
+.app-footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}

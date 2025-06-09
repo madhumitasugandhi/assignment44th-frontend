@@ -1,0 +1,74 @@
+.header{
+    text-align: center;
+    color: var(--primary);
+}
+.intern-detail-card {
+  background: #ffffff;
+  padding: 2.6rem 3rem;
+  margin: 3rem auto;
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+}
+
+.intern-detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.intern-detail-card h1 {
+  font-size: 2rem;
+  color: #FF7043;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.intern-detail-card p {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  color: #555;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+
+@media (max-width: 500px) {
+  .intern-detail-card {
+    width: 65%;
+    height: 530px;
+    padding: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .intern-detail-card h1 {
+  font-size: 1.7rem;
+  color: var(--cst);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+}
+
+
+ @media screen and (min-width: 750px) and (max-width: 992px) {
+ .intern-detail-card {
+    width: 70%;
+    height: 525px;
+    padding: 2rem;
+    line-height: 1.8;
+  }
+
+  .intern-detail-card h1 {
+  font-size: 1.9rem;
+  color: var(--cst);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+}

@@ -1,0 +1,105 @@
+:root {
+  --primary: #0056D2;
+  --accent: #00B7F1;
+  --background: #F0F4F8;
+  --card-bg: #FFFFFF;
+  --text-main: #222831;
+  --text-muted: #6C757D;
+  --cta: #FF7043;
+}
+
+.intern-card {
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg);
+  color: purple;
+  font-size: 1.25rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.intern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.name {
+  font-size: 1.50rem;
+  color: var(--text-main);
+  margin: 8px 0 4px;
+  text-align: center;
+}
+
+.basic-deltail {
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-delete {
+  background-color: var(--cta); 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-delete:hover {
+  background-color: #d62828; 
+  transform: scale(1.05);
+}
+
+.btn-edit {
+  background-color: var(--accent); 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-edit:hover {
+  background-color: #009ac9; 
+  transform: scale(1.05);
+}
+
+.del-edit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .intern-card {
+    width: 240px;
+    height: auto; 
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 992px) {
+  .intern-card {
+    width: 270px;
+    height: 220px;
+    padding: 25px 15px;
+  }
+}

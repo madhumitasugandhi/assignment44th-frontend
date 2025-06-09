@@ -1,0 +1,109 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 29px;
+  padding: 10px 0px;
+  max-width: 1200px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+
+.App-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0072C6;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.App-heading:hover {
+    color: #00ADEF;
+    font-size: 2.3rem;
+}
+
+/* Blank data box */
+.blank-data {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #555;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Fixed add-intern button */
+.add-intern {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: 2px solid #00ADEF;
+    border-radius: 50%;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; 
+}
+
+.add-intern:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 16px;
+    height: 60px;
+    width: 70px;
+
+    cursor: pointer;
+    border: none;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        justify-content: center;
+        padding: 10px;
+        gap: 12px;
+    }
+    .add-intern {
+        top: 10px;
+        right: 10px;
+        height: 36px;
+        width: 36px;
+        font-size: 1.3rem;
+    }
+    .logo {
+        top: 10px;
+        left: 10px;
+        height: 50px;
+        width: 50px;
+        font-size: 1.3rem;
+    }
+}
