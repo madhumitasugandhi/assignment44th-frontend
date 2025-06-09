@@ -5,11 +5,11 @@ import InternCard from '../../components/InternCard/InternCard';
 import AddIntern from '../../assets/add.png';
 import Logo from '../../assets/tcs-logo.png';
 import Footer from '../../views/Footer/Footer';
-import { Link, useLocation } from 'react-router-dom'; // 🆕
+import { Link, useLocation } from 'react-router-dom'; 
 
 function App() {
   const [interns, setInterns] = useState([]);
-  const location = useLocation(); // 🆕
+  const location = useLocation(); 
 
   const loadInterns = async () => {
     console.log('Loading Interns Data....!');
