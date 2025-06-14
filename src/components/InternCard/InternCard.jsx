@@ -8,7 +8,7 @@ function InternCard({ id, name, age, qualification, college, position, skills, s
     const navigate = useNavigate();
 
     const deleteIntern = async(id)=>{
-        const response = await axios.delete(`http://localhost:5000/interns/${id}`);
+        const response = await axios.delete(`${import.meta.env.VITE_API_URL}/interns/${id}`);
         window.location.reload();
     }
 
